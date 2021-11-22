@@ -1,0 +1,10 @@
+@mixin headerMenu($display: block) {
+  @keyframes headerMenu {
+    from {
+      display: none;
+    }
+    to {
+      display: $display;
+    }
+  }
+}

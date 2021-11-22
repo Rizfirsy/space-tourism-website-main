@@ -1,0 +1,15 @@
+@use "modules/tablet";
+@use "modules/desktop";
+@use "modules/mobile";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@include desktop.desktop;
+@include tablet.tablet;
+@include mobile.mobile;
+
+// sass starter-code/sass/index.scss css/index.css

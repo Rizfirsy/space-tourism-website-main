@@ -1,0 +1,93 @@
+@use "center";
+@use "navigationMenu";
+@use "typography";
+@use "colors";
+@use "flexbox";
+@use "header";
+
+@mixin desktop {
+  @media screen and (min-width: 768px) {
+    @keyframes circle {
+      from {
+        width: 17.125rem;
+        height: 17.125rem;
+      }
+      to {
+        width: 28.125rem;
+        height: 28.125rem;
+      }
+    }
+
+    .home {
+      background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+      color: colors.$white;
+      padding-inline: 10.313rem;
+
+      & &-container {
+        @include flexbox.flexbox($dir: row, $align: flex-end);
+        height: 100%;
+      }
+
+      &-left {
+        position: relative;
+        width: 28.125rem;
+        bottom: 8.188rem;
+
+        h5 {
+          @include typography.h5();
+        }
+        h1 {
+          @include typography.h1();
+          margin: 1rem 0 1rem 0;
+        }
+        p {
+          @include typography.bodyFontStyling();
+        }
+      }
+
+      &-right {
+        position: relative;
+        bottom: 8.188rem;
+
+        .explore {
+          @include center.center();
+          @include typography.h4();
+          width: 17.125rem;
+          height: 17.125rem;
+          border-radius: 100%;
+          background-color: colors.$white;
+          cursor: pointer;
+          position: relative;
+          z-index: 1;
+          text-decoration: none;
+          color: colors.$dark;
+
+          &:hover::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 28.125rem;
+            height: 28.125rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 100%;
+            animation: circle 350ms;
+            z-index: -1;
+          }
+
+          h4 {
+            letter-spacing: 0.125rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  @include header.desktop();
+}

@@ -1,0 +1,12 @@
+@use "../center";
+@use "../navigationMenu";
+@use "../typography";
+@use "../colors";
+@use "../flexbox";
+@use "../header";
+
+@mixin desktop {
+  @media screen and (min-width: 768px) {
+    @include header.desktop();
+  }
+}

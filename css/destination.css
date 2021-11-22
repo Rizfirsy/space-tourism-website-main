@@ -1,0 +1,20 @@
+/* Error: Declarations may only be used within style rules.
+ *   ,
+ * 2 |   display: flex;
+ *   |   ^^^^^^^^^^^^^
+ *   '
+ *   starter-code\sass\modules\_flexbox.scss 2:3                           flexbox()
+ *   starter-code\sass\modules\header.scss 5:3                             desktop()
+ *   starter-code\sass\modules\destination\_destination_desktop.scss 10:5  desktop()
+ *   starter-code\sass\destination.scss 11:1                               root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Declarations may only be used within style rules.\a   \2577 \a 2 \2502    display: flex;\d\a   \2502    ^^^^^^^^^^^^^\a   \2575 \a   starter-code\\sass\\modules\\_flexbox.scss 2:3                           flexbox()\a   starter-code\\sass\\modules\\header.scss 5:3                             desktop()\a   starter-code\\sass\\modules\\destination\\_destination_desktop.scss 10:5  desktop()\a   starter-code\\sass\\destination.scss 11:1                               root stylesheet";
+}
