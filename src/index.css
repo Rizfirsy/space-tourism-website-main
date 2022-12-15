@@ -47,10 +47,13 @@ h5 {
 }
 
 li,
-a,
 p {
   font-family: var(--font-body);
   font-size: 18px;
+}
+
+a {
+  font-size: 16px;
 }
 
 .subheading1 {
@@ -62,9 +65,4 @@ p {
   font-family: var(--font-subheading2);
   font-size: 14px;
   letter-spacing: 2.35px;
-}
-
-.navtext {
-  font-size: 16px;
-  letter-spacing: 2.75px;
 }

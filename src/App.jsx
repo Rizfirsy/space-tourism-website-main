@@ -1,12 +1,12 @@
-import "./App.css";
-import MainNavigation from "./components/navigations/MainNavigation";
+import styles from "./App.module.css";
+import Header from "./components/header/Header";
 
 //TODO: configure react router
 function App() {
   return (
-    <div>
-      <MainNavigation />
-    </div>
+    <article className={styles.home}>
+      <Header />
+    </article>
   );
 }
 

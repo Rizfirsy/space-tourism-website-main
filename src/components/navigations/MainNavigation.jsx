@@ -1,21 +1,21 @@
 import React from "react";
+import styles from "./MainNavigation.module.css";
 import { Link } from "react-router-dom";
 
-
+const navLinks = ["home", "destination", "crew"];
 
 const MainNavigation = () => {
   return (
-    <nav>
+    <nav className={styles.mainNavigation}>
       <ul>
-        <li>
-          <Link to={`/`}>home</Link>
-        </li>
-        <li>
-          <Link to={`/destination`}>destination</Link>
-        </li>
-        <li>
-          <Link to={`/crew`}>crew</Link>
-        </li>
+        {navLinks.map((link, index) => (
+          <li>
+            <Link to={`/${link}`}>
+              <span className={styles.index}>0{index}</span>{" "}
+              {link.toUpperCase()}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );

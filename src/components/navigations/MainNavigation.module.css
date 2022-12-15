@@ -1,0 +1,45 @@
+.mainNavigation {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.mainNavigation ul {
+  position: relative;
+  padding-inline: 123px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.mainNavigation ul::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -65%;
+  width: 473px;
+  height: 1px;
+  background-color: var(--color-white);
+}
+
+.mainNavigation ul li {
+  padding: 38px 0;
+}
+
+.mainNavigation ul li a {
+  letter-spacing: 2.75px;
+  padding: 38px 0;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.index {
+  font-weight: 700;
+}
