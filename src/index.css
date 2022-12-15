@@ -22,6 +22,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-heading);
+  font-weight: 400;
 }
 
 h1 {
@@ -44,15 +45,19 @@ h5 {
   font-size: 28px;
   font-family: var(--font-heading5);
   letter-spacing: 4.72px;
+  font-weight: 400;
+  color: var(--color-blue-space);
 }
 
 li,
 p {
   font-family: var(--font-body);
   font-size: 18px;
+  font-weight: 400;
 }
 
 a {
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -65,4 +70,15 @@ a {
   font-family: var(--font-subheading2);
   font-size: 14px;
   letter-spacing: 2.35px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
 }

@@ -6,9 +6,7 @@ import logo from "../../assets/shared/logo.svg";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div>
-        <img src={logo} alt="space-tourism" />
-      </div>
+      <img src={logo} alt="space-tourism" />
       <MainNavigation />
     </header>
   );
