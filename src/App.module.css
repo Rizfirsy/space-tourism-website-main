@@ -1,0 +1,67 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./assets/home/background-home-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home section {
+  width: 100%;
+  padding-inline: 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 131px;
+}
+
+.text {
+  max-width: 444px;
+  color: var(--color-white);
+}
+
+.text p {
+  color: var(--color-blue-space);
+}
+
+.explore {
+  width: 274px;
+  height: 274px;
+  border-radius: 100%;
+}
+
+.explore a {
+  text-decoration: none;
+  color: var(--color-dark);
+
+  font-size: 32px;
+  font-weight: 400;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 156px;
+    bottom: 90px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .text p {
+    text-align: center;
+  }
+
+  .explore {
+    width: 242px;
+    height: 242px;
+  }
+}

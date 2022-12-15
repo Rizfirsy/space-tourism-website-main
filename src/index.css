@@ -22,6 +22,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-heading);
+  font-weight: 400;
 }
 
 h1 {
@@ -44,13 +45,20 @@ h5 {
   font-size: 28px;
   font-family: var(--font-heading5);
   letter-spacing: 4.72px;
+  font-weight: 400;
+  color: var(--color-blue-space);
 }
 
 li,
-a,
 p {
   font-family: var(--font-body);
   font-size: 18px;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .subheading1 {
@@ -64,7 +72,13 @@ p {
   letter-spacing: 2.35px;
 }
 
-.navtext {
-  font-size: 16px;
-  letter-spacing: 2.75px;
+button {
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
 }
