@@ -10,3 +10,9 @@
   width: 48px;
   height: 48px;
 }
+
+@media screen and (max-width: 720px) {
+  .header {
+    padding: 24px;
+  }
+}

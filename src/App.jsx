@@ -19,7 +19,7 @@ function App() {
           </p>
         </div>
         <button className={styles.explore}>
-          <Link href="/">Explore</Link>
+          <Link href="/explore">Explore</Link>
         </button>
       </section>
     </article>
