@@ -1,0 +1,59 @@
+.destination {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "image text";
+  grid-template-rows: max-content 100%;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 12rem;
+}
+
+.title {
+  height: fit-content;
+  grid-area: title;
+}
+
+.image {
+  height: 100%;
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  grid-area: text;
+  color: var(--color-white);
+  gap: 2rem;
+}
+
+.title h5 {
+  color: var(--color-white);
+  font-weight: 400;
+}
+
+.title h5 .pageNumber {
+  color: rgba(255, 255, 255, 0.25);
+  font-weight: 700;
+  padding-right: 28px;
+}
+
+.text .description {
+  margin: 2rem 0;
+}
+
+.text .description p {
+  max-width: 444px;
+}

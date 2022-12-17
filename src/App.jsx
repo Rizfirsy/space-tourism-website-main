@@ -1,13 +1,12 @@
 import styles from "./App.module.css";
-import Header from "./components/header/Header";
 import { Link } from "react-router-dom";
+import MainLayout from "./assets/layout/MainLayout";
 
 //TODO: configure react router
 function App() {
   return (
-    <article className={styles.home}>
-      <Header />
-      <section>
+    <MainLayout>
+      <section className={styles.home}>
         <div className={styles.text}>
           <h5>SO, YOU WANT TO TRAVEL TO</h5>
           <h1>SPACE</h1>
@@ -22,7 +21,7 @@ function App() {
           <Link href="/explore">Explore</Link>
         </button>
       </section>
-    </article>
+    </MainLayout>
   );
 }
 
