@@ -31,6 +31,17 @@
 
 .mainNavigation ul li {
   padding: 38px 0;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-white);
+  height: 3px;
 }
 
 .mainNavigation ul li a {
